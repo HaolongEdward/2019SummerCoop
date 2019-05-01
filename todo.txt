@@ -1,0 +1,8 @@
+Implement a Python function which can plot the following datasets into 2D graph.
+The x axis should be time index and the y axis should be the periodic time series data  
+	1. Historical Hourly Weather Data 
+		download url: https://www.kaggle.com/selfishgene/historical-hourly-weather-data
+	2. Weather Madrid 1997 - 2015
+		https://www.kaggle.com/juliansimon/weather_madrid_lemd_1997_2015.csv
+	
+
