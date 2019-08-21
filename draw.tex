@@ -1,0 +1,145 @@
+
+\documentclass{amsart}
+\usepackage{pgfplots}
+
+\setlength{\voffset}{-1cm}
+\setlength{\textwidth}{17cm}
+\addtolength{\textheight}{5cm}
+\setlength{\footskip}{1cm}
+\addtolength{\oddsidemargin}{-2cm}
+\addtolength{\evensidemargin}{-2cm}
+\allowdisplaybreaks
+\begin{document} 
+\thispagestyle{empty}~\\
+\centerline{\textbf{\Huge Entose}}~\vspace{0.8cm}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=blue,mark=*] table [x=epoch, y=loss, col sep=comma]
+{ENTOSE.csv};
+\addlegendentry{loss}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=red,mark=*] table [x=epoch, y=val_loss, col sep=comma]
+{ENTOSE.csv};
+\addlegendentry{\texttt{val\char`_loss}}
+\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=teal,mark=*] table [x=epoch, y=acc, col sep=comma]
+{ENTOSE.csv};
+\addlegendentry{acc}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=magenta,mark=*] table [x=epoch, y=val_acc, col sep=comma]
+{ENTOSE.csv};
+\addlegendentry{\texttt{val\char`_acc}}
+\end{axis}
+\end{tikzpicture}
+\newpage
+\centerline{\textbf{\Huge HHWD}}~\vspace{0.4cm}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=blue,mark=*] table [x=epoch, y=loss, col sep=comma]
+{HHWD.csv};
+\addlegendentry{loss}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=red,mark=*] table [x=epoch, y=val_loss, col sep=comma]
+{HHWD.csv};
+\addlegendentry{\texttt{val\char`_loss}}
+\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=teal,mark=*] table [x=epoch, y=acc, col sep=comma]
+{HHWD.csv};
+\addlegendentry{acc}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=magenta,mark=*] table [x=epoch, y=val_acc, col sep=comma]
+{HHWD.csv};
+\addlegendentry{\texttt{val\char`_acc}}
+\end{axis}
+\end{tikzpicture}
+\newpage
+\centerline{\textbf{\Huge LEMD}}~\vspace{0.5cm}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=blue,mark=*] table [x=epoch, y=loss, col sep=comma]
+{LEMD.csv};
+\addlegendentry{loss}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=red,mark=*] table [x=epoch, y=val_loss, col sep=comma]
+{LEMD.csv};
+\addlegendentry{\texttt{val\char`_loss}}
+\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=teal,mark=*] table [x=epoch, y=acc, col sep=comma]
+{LEMD.csv};
+\addlegendentry{acc}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=magenta,mark=*] table [x=epoch, y=val_acc, col sep=comma]
+{LEMD.csv};
+\addlegendentry{\texttt{val\char`_acc}}
+\end{axis}
+\end{tikzpicture}
+\newpage
+\centerline{\textbf{\Huge weatherAUS}}~\vspace{0.5cm}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=blue,mark=*] table [x=epoch, y=loss, col sep=comma]
+{weatherAUS.csv};
+\addlegendentry{loss}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=red,mark=*] table [x=epoch, y=val_loss, col sep=comma]
+{weatherAUS.csv};
+\addlegendentry{\texttt{val\char`_loss}}
+\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=teal,mark=*] table [x=epoch, y=acc, col sep=comma]
+{weatherAUS.csv};
+\addlegendentry{acc}
+\end{axis}
+\end{tikzpicture}\quad\begin{tikzpicture}
+\begin{axis}[legend style={at={(0.5,-0.1)},anchor=north}]
+\addplot[color=magenta,mark=*] table [x=epoch, y=val_acc, col sep=comma]
+{weatherAUS.csv};
+\addlegendentry{\texttt{val\char`_acc}}
+\end{axis}
+\end{tikzpicture}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
